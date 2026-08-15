@@ -21,6 +21,6 @@ int main(){
     strcpy(s1.name,"saharsh");
     s1.age = 20;
     s1.address.pincode = 444808;
-    
+      
     
 }
