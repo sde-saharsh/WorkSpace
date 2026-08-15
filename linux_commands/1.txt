@@ -1,0 +1,48 @@
+Linux filesystem 
+
+    -> linux org everything inside the '/' root directory 
+    -> its like a top level directory we have in the linux 
+    -> inside it all present like example /home /var /temp .. etc
+
+    -> '/home' inside home we have user /saharsh /alice /bob...
+
+
+PWD - to check your current directoy / present working directory
+ ~  - give you your home directory
+cd ~- this takes you to the home directory directly 
+
+ls /etc - you will see many configuration files and directories
+    ex.. cat/etc/hostname - show the hostname of the computer
+
+for practice -  cd /tmp - temp file to make do the practice
+                mkdir linux-practice
+                cd linux-practice
+
+
+--------------------------------------------------------------------
+
+A command generally looks like:
+command options arguments
+ls -l /home
+
+pwd -> present working directory 
+ls  -> list 
+ls -l -> detailed information
+ls -a -> including hidden files
+ls -la -> both including (important + freq used)
+
+cd -> chnage directory
+cd .. -> .. means parent directory
+cd ~ -> go to the home 
+cd / -> root directory
+
+--------------------------------------------------------------------
+
+Absolute path vs Relative path
+
+absolute path - path start from the /
+relative path - path start from currently where you are
+
+mkdir - make directory
+mkdir -p projects/linux/basics -> make the parent directory if it is not present 
+mkdir projects/linux/basics -> it will not make the linux.basic file of the project directory is not present 
