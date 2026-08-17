@@ -1,0 +1,45 @@
+
+Calculation 
+    - calculation always done n th ehiger datatypes
+    - order
+    - (double,float,long long int, long int, int , char);
+    - -> from left to right
+    - Ex.. cout<< 'a' + 1
+    - Ex.. double a = 3/2; - output : 1
+    - pahale calculation hogi then conversion hoga
+
+    - operator presidense
+    - * / %  same level  - from left to right operation perform
+    - Ex.. cout<< 7 / 2 * 3 <<endl; - output : 9
+    - Ex.. cout<< 3 * 7 / 2 <<endl; - output : 10
+    
+
+
+Datatypes ranges
+    - int, char, long int, long long int, float, double
+    - -10^9 < int < 10^9
+    - -10^12 < long int < 1^12
+    - -10^18 < long long int < 10^18
+    - above are the rough ranges that we needs to keep int mind
+
+
+Overflow
+    - when we give size greater than the expection 
+    - keep all in ranges 
+    - cout << INT_MAX + 1 << endl;
+    - output : -2168.... somwthing + 1 karne se cycle back ho jati hai 
+    - this is the complete cycle -10^9 < int < 10^9
+
+    - int a = 100000; 10^5
+    - int b = 100000; 10^5
+    - long long int c = a * b * 1LL; - wrong calculation 
+    - long long int d = 1LL * a * b; - same correct
+    - long long int x = a * 1LL * b; - same correct
+
+Percision Error
+    - double c = 1e24
+    - output : 999999999999932..... .000
+    - the value of the c will not exactly the 10^24
+    - its very near about it 
+    - thats the Percision error & thats why we shouldnot include the double in our calculation
+

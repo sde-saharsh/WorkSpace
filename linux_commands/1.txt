@@ -46,3 +46,27 @@ relative path - path start from currently where you are
 mkdir - make directory
 mkdir -p projects/linux/basics -> make the parent directory if it is not present 
 mkdir projects/linux/basics -> it will not make the linux.basic file of the project directory is not present 
+
+
+touch hello.txt -> if we want to create the empty file
+touch file1.txt file2.txt file3.txt 
+Now you will have - file1.txt
+                    file2.txt
+                    file3.txt
+
+cat -> used commonly to display the content of the file 
+cat hello.txt -> output (Hello Linux)
+
+Now if the file content is very large - then you can use the less
+less hello.txt -> direclty terminal pe pdf ki tarah khulega kuch to 
+having controls like 
+↑ / ↓       move
+Space       next page
+b           previous page
+q           quit
+
+
+cp hello.txt backup.txt -> copy the hello.txt file with content to the backup.txt
+
+
+--------------------------------------------------------------------
