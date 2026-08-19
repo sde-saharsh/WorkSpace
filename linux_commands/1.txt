@@ -68,5 +68,84 @@ q           quit
 
 cp hello.txt backup.txt -> copy the hello.txt file with content to the backup.txt
 
+mv  - move or rename
+    - mv notes.txt Document - moves the notes.txt to the Documents
+    - mv notes.txt hello.txt - rename the notes.txt to the hello.txt
 
---------------------------------------------------------------------
+rm - used to delete somehting 
+    - it dont move the file to bin it delete direclty (Be careful)
+
+Echo -
+    mkdir echo_practice
+    cd echo_practice
+    echo "Linux is fun" > test.txt - not append 
+    cat test.txt
+    echo "I am learning commands" >> test.txt - append
+    cat test.txt
+
+
+grep - suppose that we have to search one word in the file containing the word
+    - word = "Linux" file = helllo.txt
+    - command : grep Linux hello.txt
+
+
+** important
+Find command 
+    - find . -name "hello.txt"
+    - pure linux mein jidhar bhi hello.txt milega sabko print krdega
+    - find - search / . current directory / -name - search by name / filename
+
+
+** important
+ls -al 
+    drwxr-xr-x   3 root    root    4096 Oct 15  2024 .
+    drwxr-xr-x  24 root    root    4096 Nov  8  2024 ..
+    drwxr-x--- 104 saharsh saharsh 4096 Aug 17 22:38 saharsh
+
+    rwx - read, write, execute
+
+    drwxr-x--- 104 saharsh saharsh 4096 Aug 17 22:38 saharsh
+    │└──┬──┘
+    │   │
+    │   permissions
+    └── directory
+
+    rwx | r-x | ---
+    ↓     ↓     ↓
+    User  Group Others
+
+    - user can read + write + execute
+    - group can read + execute
+    - other can not do anything
+
+    one thing to remember r = 4 , w = 2 , x = 1
+    .. rwx = 4 + 2 + 1 = 7
+    .. r-x = 4 + 0 + 1 = 5
+    .. --- = 0 + 0 + 0 = 0
+    so the directoy has permissions 750
+
+
+
+chmod - change mode / chnage permissions
+    - chmod u+x file/name
+    - chmod u-x file/name
+    - chmod g+x file/name
+    - chmod g-x file/name
+    - chmod a+x file/name - all 
+
+chown - Change Owner
+    - ls -l file/path - show the details & Owner
+    - sudo chown new/Owner/Name file/name
+    -Ex. ls -l script.sh
+    - sudo chown saharsh script.sh
+    - owner chnaged
+
+umask - default permission change
+    - default permission for the file - 666
+    - for the directories 777
+    - if default permission is 666
+    - we d umask 022
+    - 066 - 022 = 044 the permission will chnage 
+-------------------------------n-------------------------------------
+
+
